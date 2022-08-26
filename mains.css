@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+#nav_head{
+    position: sticky ;
+    background: white;
+    height: 80px;
+    font-weight: bold;
+    width: 100%;
+    top: 0;
+
+}
+#nav_select{
+    list-style: none;
+    float: right;
+    margin-right: 5%;
+    margin-top: 27px;
+}
+#nav_select li{
+    display: inline;
+    list-style: none;
+    margin: 0 14px;
+
+}
+#nav_select a, a:hover, a:active, a:focus{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+/**
+头像旋转
+ */
+#nav_icon{
+    position: absolute;
+    margin-top: 0.32%;
+    display: inline;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #bdbdbd;
+    border-radius: 50%;
+    left: 5%;
+    top: 1%;
+    transition: 1.2s;
+}
+#nav_icon:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+#bo_content{
+    width: 100%;
+    height: 750px;
+    /*margin-top: 5%;*/
+    animation: fadeIn 2.5s;
+    background: url("img/background.jpg") center;
+}
+.bo_content_text {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 10%;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.266em;
+    font-family: Arial, sans-serif;
+}
+#bo_content_text_2{
+    margin-top: 20%;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    40% {opacity: 0}
+    100% {opacity: 1}
+
+}
